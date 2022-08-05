@@ -1,9 +1,12 @@
-body{background-image: url(./imagens/grill-background-barbecue-fire-grill-close-up-isolated-on-black-background.jpg);
+body{background-image: url(./imagens/grill-background-barbecue-fire-grill-close-up-isolated-on-black-background_Easy-Resize.com.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: black;}
 
 footer{text-align: center;}
+
+
+.display{display: none;}
 
 a{color: white;
     text-decoration: none;
@@ -13,7 +16,7 @@ a{color: white;
 
 a:hover{color: red;}
 
-.estilo_form{height: 300px;
+.estilo_form{height: 350px;
                 width: 90%;
                 background-color: rgba(240, 248, 255, 0.842);
                 margin: auto;
@@ -34,12 +37,14 @@ a:hover{color: red;}
                     border-radius: 20px;
                     transition-property: background-color;
                     transition-duration: 700ms;
-
                     }
 
 .texto_cel{display: block;}
 
-h2{font-style: italic;}
+h1{color: white;
+    text-align: center;
+    font-size: 39px;
+    font-style: italic;}
 
 .texto_pc{display: none;}
 
@@ -62,17 +67,10 @@ h2{font-style: italic;}
                     text-align: center;
                     border-radius: 40px ;}
 
-    .margin_top{margin-top: 80px;}
+    .margin_top{margin-top: 55px;}
 
     .estilo_input{height: 25px;
                     border-radius: 15px;}
-
-    h1{color: white;
-        text-align: center;
-        font-size: 39px;
-        font-style: italic;}
-
-    h2{display: none;}
 
     .texto_cel{display: none;}
 
@@ -82,15 +80,5 @@ h2{font-style: italic;}
                 text-align: center;
                 font-size: 25px;}
         
-        /* 
-        main{margin: 0;
-            padding: 0;
-            height: 100vw;
-            width: 40%;
-            background-image: url(./imagens/34151.jpg);
-            background-repeat: repeat;
-            background-size:contain;
-            floa
-            } */
     
 }

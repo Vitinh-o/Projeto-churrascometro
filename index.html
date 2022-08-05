@@ -21,26 +21,29 @@
 
             
 
-                <h2> Churrascômetro </h2>
 
                 <p class="texto_cel"> Planeje um churrasco <br> da melhor maneira <br> possível  utilizando <br> nosso Churrascômetro </p>
 
 
-                <form >
-
-                    <input type="number" class="estilo_input margin_top" placeholder="Quantidade de homens" min="0">
+                    <input type="number" class="estilo_input margin_top" id="homem" placeholder="Quantidade de homens" min="0" required>
                     <br> <br> 
-                    <input type="number" class="estilo_input" placeholder="Quantidade de Mulheres" min="0">
+                    <input type="number" class="estilo_input" id="mulher" placeholder="Quantidade de Mulheres" min="0" required>
                     <br><br>
-                    <input type="number" class="estilo_input" placeholder="Quantidade de crianças" min="0">
+                    <input type="number" class="estilo_input" id="crianca" placeholder="Quantidade de crianças" min="0" required>
                     <br><br>
-                    <button id="calc" class="estilo_botao_calc"> Calcular </button>
+                    <input type="number" class="estilo_input" id="horario" placeholder="duração do churras (em horas)" min="0" required>
+                    <br><br>
+                    <button id="calc" class="estilo_botao_calc" required> Calcular </button>
 
-                </form>
-                
 
             </section>
-        
+            <br>
+            
+            <section class="estilo_form display" id="modificacao">
+
+
+
+            </section>
 
 
 
@@ -50,12 +53,13 @@
 
 
         <footer>
-            <a href='https://br.freepik.com/fotos-vetores-gratis/garfo-churrasco'>Garfo churrasco vetor criado por macrovector - br.freepik.com</a>
+            <a href='https://br.freepik.com/fotos-vetores-gratis/garfo-churrasco' target="_blank" >Garfo churrasco vetor criado por macrovector - br.freepik.com</a>
             <br>
-            <a href='https://br.freepik.com/fotos-vetores-gratis/grelha'> Grelha foto criado por jcomp - br.freepik.com</a>
+            <a href='https://br.freepik.com/fotos-vetores-gratis/grelha' target="_blank" > Grelha foto criado por jcomp - br.freepik.com</a>
         </footer>
 
     </main>
 
+<script src="./script.js"></script>
 </body>
 </html>
