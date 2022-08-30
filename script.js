@@ -20,6 +20,7 @@ calculo.addEventListener("click", pegar_dados)
 function pegar_dados()
 {
 
+
     let homens =  parseInt(document.getElementById("homem").value)
 
     let mulheres = parseInt(document.getElementById("mulher").value)
@@ -28,30 +29,28 @@ function pegar_dados()
 
     let horas = parseInt(document.getElementById("horario").value)
 
-    // let dados = [homens, mulheres, criancas, horas]
+    let dados = document.getElementById("modificacao")
 
-    calcular_dados(homens, mulheres, criancas, horas)
+
+if(homens >=0 && mulheres >=0 && criancas >=0 && horas >=0){
+
+    calcular_dados(homens, mulheres, criancas, horas, dados)
+
+}
+else{
+    
+    dados.style.display = "block"
+         
+    dados.innerHTML = `<br><br><br><p>Prencha os campos com números positivos ou 0 caso não haja valores. </p>`
+    dados.innerHTML += `<p> Obs: É necessário preencher todos os campos para realizar o cálculo. </p>`
+}
 
 }
 
 
 
-function calcular_dados(homens, mulheres, criancas, horas)
+function calcular_dados(homens, mulheres, criancas, horas, dados)
 {
-    let dados = document.getElementById("modificacao")
-    
-
-    console.log(homens)
-
-    if(isNaN(homens) || isNaN(mulheres) || isNaN(criancas)|| isNaN(horas))
-    {
-        dados.style.display = "block"
-         
-        dados.innerHTML = `<br> <p>É necessário preencher todos os campos indicados. Caso não possua algum valor, preencha o campo com o número 0.</p>`
-
-    }
-
-    else{
 
         if(horas < 6){
 
@@ -90,6 +89,6 @@ function calcular_dados(homens, mulheres, criancas, horas)
         dados.innerHTML += `<p>  ${valor_acompanhamento}g de acompanhamentos</p>`
         dados.innerHTML += `<p>  ${carvao.toFixed(2)}kg de carvão</p>`
 
-    }
+    
 
 }
